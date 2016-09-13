@@ -32,5 +32,28 @@ public class Doctor {
         yearsWorked = newYearsWorked;
     }
 
+    String getEducation1(){
+        return education[0];
+    }
+
+    void setEducation1(String education1){
+        education[0] = education1;
+    }
+
+    String getEducation2(){
+        return education[1];
+    }
+
+    void setEducation2(String education2){
+        education[1] = education2;
+    }
+
+    String getEducation3(){
+        return education[2];
+    }
+
+    void setEducation3(String education3){
+        education[2] = education3;
+    }
 
 }
