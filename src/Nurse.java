@@ -3,7 +3,7 @@
  *
  * this class holds information about nurses working in different hospitals
  */
-public class Nurses {
+public class Nurse {
     String name;
     int age;
     String[] specialization = new String[3];
