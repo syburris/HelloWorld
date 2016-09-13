@@ -44,7 +44,7 @@ public class Doctor {
         if(age > 65) {
             isWorking = false;
         }
-        else {
+        else{
             isWorking = newIsWorking;
         }
     }
@@ -72,5 +72,7 @@ public class Doctor {
     void setEducation3(String education3){
         education[2] = education3;
     }
+
+
 
 }
