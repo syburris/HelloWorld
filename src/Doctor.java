@@ -5,8 +5,20 @@
 public class Doctor {
     String name;
     int age;
-    int yearsWorked;
+    boolean isWorking;
     String[] education = new String[3];
+
+
+    Doctor(String newName, int newAge, boolean isWorking, String education1, String education2, String education3){
+        setName(newName);
+        setAge(newAge);
+        setIsWorking(isWorking);
+        setEducation1(education1);
+        setEducation2(education2);
+        setEducation3(education3);
+
+
+    }
 
     String getName() {
         return name;
@@ -24,12 +36,17 @@ public class Doctor {
         age = newAge;
     }
 
-    int getYearsWorked(){
-        return yearsWorked;
+    boolean getIsWorking(){
+        return isWorking;
     }
 
-    void setYearsWorked(int newYearsWorked){
-        yearsWorked = newYearsWorked;
+    void setIsWorking(boolean newIsWorking){
+        if(age > 65) {
+            isWorking = false;
+        }
+        else {
+            isWorking = newIsWorking;
+        }
     }
 
     String getEducation1(){
