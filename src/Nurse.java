@@ -9,6 +9,19 @@ public class Nurse {
     String[] specialization = new String[3];
     int yearsExp;
     String currentHospital;
+    static int maxAge = 65;
+
+    Nurse(String newName, int newAge, String newSpecialization1, String newSpecialization2, String newSpecialization3, int newYearsExp, String newHospital){
+        setName(newName);
+        setAge(newAge);
+        setSpecialization1(newSpecialization1);
+        setSpecialization2(newSpecialization2);
+        setSpecialization3(newSpecialization3);
+        setYearsExp(newYearsExp);
+        setCurrentHospital(newHospital);
+    }
+
+
 
     String getName(){
         return name;
@@ -23,7 +36,12 @@ public class Nurse {
     }
 
     void setAge(int newAge){
-        age = newAge;
+        if(newAge >= maxAge){
+            currentHospital = "Retired";
+        }
+        else{
+            age = newAge;
+        }
     }
 
     String getSpecialization1(){
