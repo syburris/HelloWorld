@@ -9,6 +9,14 @@ public class Address {
     String country;
     int zipCode;
 
+    Address(String newStreet, String newCity, String newState, int newZipCode, String newCountry){
+        setStreet(newStreet);
+        setCity(newCity);
+        setState(newState);
+        setZipCode(newZipCode);
+        setCountry(newCountry);
+    }
+
     String getStreet(){
         return street;
     }

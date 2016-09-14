@@ -7,6 +7,7 @@ public class Doctor {
     int age;
     boolean isWorking;
     String[] education = new String[3];
+    static int maxAge = 65;
 
 
     Doctor(String newName, int newAge, boolean isWorking, String education1, String education2, String education3){
@@ -41,7 +42,7 @@ public class Doctor {
     }
 
     void setIsWorking(boolean newIsWorking){
-        if(age > 65) {
+        if(age > maxAge) {
             isWorking = false;
         }
         else{
