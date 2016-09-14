@@ -8,6 +8,7 @@ public class Address {
     String state;
     String country;
     int zipCode;
+    boolean validAddress = true;
 
     Address(String newStreet, String newCity, String newState, int newZipCode, String newCountry){
         setStreet(newStreet);
@@ -22,7 +23,10 @@ public class Address {
     }
 
     void setStreet(String newStreet){
-        street = newStreet;
+        if(validAddress = true){
+            street = newStreet;
+        }
+
     }
 
     String getCity(){
@@ -30,7 +34,8 @@ public class Address {
     }
 
     void setCity(String newCity){
-            city = newCity;
+        city = newCity;
+
     }
 
     String getState(){

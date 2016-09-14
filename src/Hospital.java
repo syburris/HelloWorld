@@ -35,7 +35,7 @@ public class Hospital {
     }
 
     void setYearsOpen(int newYearsOpen){
-        if(newYearsOpen < 3){
+        if(hospitalHasER(yearsOpen)){
             hasER = false;
         }
         else{
@@ -81,6 +81,11 @@ public class Hospital {
 
     void setDoctors5(String newDoctor5){
         doctors[4].name = newDoctor5;
+    }
+
+    static boolean hospitalHasER(int yearsOpen){
+        yearsOpen = 0;
+        return false;
     }
 
 

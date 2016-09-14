@@ -34,8 +34,8 @@ public class MedicalCondition {
     }
 
     void setCritical(boolean newCritical){
-        if(newCritical = true){
-            daysInBed = 5;
+        if(newCritical = reallyBad(daysInBed)){
+            newCritical = true;
         }
         else{
             critical = newCritical;
@@ -64,6 +64,11 @@ public class MedicalCondition {
 
     void setDaysInBed(int newDaysInBed){
         daysInBed = newDaysInBed;
+    }
+
+    static boolean reallyBad(int newDaysInBed){
+        newDaysInBed = 10;
+        return true;
     }
 
 
