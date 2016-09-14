@@ -13,5 +13,53 @@ public class MedicalCondition {
     String timeWith;
     int daysInBed;
 
+    MedicalCondition(String newNameofCondition,boolean newCritical,boolean newTreatable,String newTimeWith,int newDaysInBed){
+        setNameofCondition(newNameofCondition);
+        setCritical(newCritical);
+        setTreatable(newTreatable);
+        setTimeWith(newTimeWith);
+        setDaysInBed(newDaysInBed);
+    }
+
+    String getNameofCondition(){
+        return nameofCondition;
+    }
+
+    void setNameofCondition(String newNameofCondition){
+        nameofCondition = newNameofCondition;
+    }
+
+    boolean getCritical(){
+        return critical;
+    }
+
+    void setCritical(boolean newCritical){
+        critical = newCritical;
+    }
+
+    boolean getTreatable(){
+        return treatable;
+    }
+
+    void setTreatable(boolean newTreatable){
+        treatable = newTreatable;
+    }
+
+    String getTimeWith(){
+        return timeWith;
+    }
+
+    void setTimeWith(String newTimeWith){
+        timeWith = newTimeWith;
+    }
+
+    int getDaysInBed(){
+        return daysInBed;
+    }
+
+    void setDaysInBed(int newDaysInBed){
+        daysInBed = newDaysInBed;
+    }
+
 
 }
