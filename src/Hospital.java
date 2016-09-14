@@ -7,27 +7,46 @@ public class Hospital {
     int yearsOpen;
     boolean hasER;
     Address address;
-    String[] doctors = new String[5];
+    Doctor[] doctors = new Doctor[5];
 
 
-    String getNameofHospital(){
+    String getNameofHospital() {
         return nameofHospital;
+    }
+
+    void setNameofHospital(String newNameofHospital){
+        nameofHospital = newNameofHospital;
     }
 
     int getYearsOpen(){
         return yearsOpen;
     }
 
+    void setYearsOpen(int newYearsOpen){
+        yearsOpen = newYearsOpen;
+    }
+
     boolean getHasER(){
         return hasER;
     }
 
-    Address getAddress(){
-        return address;
+    void setHasER(boolean newHasER){
+        hasER = newHasER;
     }
 
-    String getAddress2(){
+    String getAddress(){
         return address.street + System.lineSeparator() + address.city +", "+ address.state + " " + address.zipCode + System.lineSeparator() + address.country;
     }
+
+    void setAddress(Address newAddress){
+        address = newAddress;
+    }
+
+    String getDoctors(){
+        return doctors[0].name;
+    }
+
+
+
 }
 
