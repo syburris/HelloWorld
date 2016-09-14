@@ -11,6 +11,16 @@ public class Patients {
     String checkIn;
     String checkOut;
     String sickWith;
+    static int maxAge = 100;
+
+    Patients(String newName,int newAge,String newDateOfBirth, String newCheckIn,String newCheckOut,String newSickWith){
+        setName(newName);
+        setAge(newAge);
+        setDateOfBirth(newDateOfBirth);
+        setCheckIn(newCheckIn);
+        setCheckOut(newCheckOut);
+        setSickWith(newSickWith);
+    }
 
     String getName(){
         return name;
@@ -25,7 +35,12 @@ public class Patients {
     }
 
     void setAge(int newAge){
-        age = newAge;
+        if(newAge >= 100){
+            sickWith = "Death";
+        }
+        else{
+            age = newAge;
+        }
     }
 
     String getDateOfBirth(){

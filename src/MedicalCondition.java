@@ -34,7 +34,12 @@ public class MedicalCondition {
     }
 
     void setCritical(boolean newCritical){
-        critical = newCritical;
+        if(newCritical = true){
+            daysInBed = 5;
+        }
+        else{
+            critical = newCritical;
+        }
     }
 
     boolean getTreatable(){

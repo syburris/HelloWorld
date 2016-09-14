@@ -30,7 +30,7 @@ public class Address {
     }
 
     void setCity(String newCity){
-        city = newCity;
+            city = newCity;
     }
 
     String getState(){

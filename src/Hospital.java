@@ -35,7 +35,12 @@ public class Hospital {
     }
 
     void setYearsOpen(int newYearsOpen){
-        yearsOpen = newYearsOpen;
+        if(newYearsOpen < 3){
+            hasER = false;
+        }
+        else{
+            yearsOpen = newYearsOpen;
+        }
     }
 
     boolean getHasER(){
