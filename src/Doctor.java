@@ -10,13 +10,12 @@ public class Doctor {
     static int maxAge = 65;
 
 
-    Doctor(String newName, int newAge, boolean isWorking, String education1, String education2, String education3){
+    Doctor(String newName, int newAge, boolean isWorking, String[] newEducation){
         setName(newName);
         setAge(newAge);
         setIsWorking(isWorking);
-        setEducation1(education1);
-        setEducation2(education2);
-        setEducation3(education3);
+        setEducation(newEducation);
+
 
 
     }
@@ -50,29 +49,14 @@ public class Doctor {
         }
     }
 
-    String getEducation1(){
-        return education[0];
+    String[] getEducation(){
+        return education;
     }
 
-    void setEducation1(String education1){
-        education[0] = education1;
+    void setEducation(String[] newEducation){
+        education = newEducation;
     }
 
-    String getEducation2(){
-        return education[1];
-    }
-
-    void setEducation2(String education2){
-        education[1] = education2;
-    }
-
-    String getEducation3(){
-        return education[2];
-    }
-
-    void setEducation3(String education3){
-        education[2] = education3;
-    }
 
 
 
