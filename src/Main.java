@@ -16,7 +16,13 @@ public class Main {
         }
 
         //traditional for loop
-
+        for (int i = 0; i < names.length; i++){
+            System.out.println(names[i]);
+        }
+        //new for loop
+        for(String name : names){
+            System.out.println(name);
+        }
     }
 }
 
