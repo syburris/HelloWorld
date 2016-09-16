@@ -11,7 +11,7 @@ public class Person {
         setName(newName);
         setAge(newAge);
         setIsAlive(newIsAlive);
-
+        double balance;
 
     }
 
@@ -20,9 +20,10 @@ public class Person {
     }
 
     void setName(String newName) {
-        if (isValidName(newName)) {
-            name = newName;
-        }
+//        if (isValidName(newName)) {
+//            name = newName;
+//        }
+        name= newName;
     }
 
     int getAge() {
