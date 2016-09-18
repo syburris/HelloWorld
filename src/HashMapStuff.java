@@ -26,7 +26,7 @@ public class HashMapStuff {
             }
             Person person = users.get(name);
 
-            System.out.println("Logged in as " + person.name);
+            System.out.println("Logged in as " + users);
 
         }
 

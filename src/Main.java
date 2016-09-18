@@ -50,7 +50,7 @@ public class Main {
         person.put("age", 30);
         person.put("location", "Charleston");
         person.put("name", "bob");
-        person.put("names", names2);
+        person.put("age", 30);
         System.out.println(person);
 
 
@@ -65,7 +65,7 @@ public class Main {
         Person p = new Person("Alice",33,true);
         users.put("Alice",p);
 
-        System.out.println(users.get(p.getName()));
+        System.out.println(users.get(p.age));
 
 
     }
