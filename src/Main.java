@@ -65,7 +65,7 @@ public class Main {
         Person p = new Person("Alice",33,true);
         users.put("Alice",p);
 
-        System.out.println(users.get(p.age));
+        System.out.println(users.get(p));
 
 
     }
