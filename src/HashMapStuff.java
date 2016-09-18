@@ -21,7 +21,7 @@ public class HashMapStuff {
             String name = scanner.nextLine();
 
             if (!users.containsKey(name)) {
-                Person p = new Person(name, 20, true);
+                Person p = new Person(name, (Integer) 30, true);
                 users.put(name, p);
             }
             Person person = users.get(name);

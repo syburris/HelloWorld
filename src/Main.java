@@ -50,9 +50,8 @@ public class Main {
         person.put("age", 30);
         person.put("location", "Charleston");
         person.put("name", "bob");
-        person.remove("age");
         person.put("names", names2);
-        System.out.println(person.get("name"));
+        System.out.println(person);
 
 
 
