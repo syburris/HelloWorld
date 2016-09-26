@@ -1,7 +1,9 @@
+import java.util.Comparator;
+
 /**
  * Created by stevenburris on 9/12/16.
  */
-public class Person {
+public class Person implements Comparable{
     String name;
     int age;
     boolean isAlive;
@@ -59,5 +61,10 @@ public class Person {
                 ", isAlive=" + isAlive +
                 ", balance=" + balance +
                 '}';
+    }
+    @Override
+    public int compareTo(Object o) {
+        Person p = (Person) o;
+        return this.name.compareTo(p.name);
     }
 }
